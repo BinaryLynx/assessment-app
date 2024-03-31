@@ -46,7 +46,7 @@ inspection_result_schema_in = Model(
         "inspection_target_id": fields.String(required=True, description="Проверяемый субъект.", default="1"),
         "operator_id": fields.String(required=True, description="Оператор проверки.", default="1"),
         "inspection_date": TimeFormat(
-            required=True, description="Дата и время проведения проверки.", default="2024-01-23 14:28:27.908589"
+            required=True, description="Дата и время проведения проверки.", default="2024-03-31T19:25:41.110084"
         ),
         "files": fields.List(fields.String, description="Список путей к файлам.", default="[]"),
     },
