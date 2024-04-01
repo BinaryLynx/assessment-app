@@ -13,7 +13,7 @@ class Calculatable:
     is_ignored: bool = None
     grade: float = None
     is_critical: bool = None
-    scale_max_value: float = None
+    scale_max_value: float = 5
     weight: float = None
     matched_result_grade: float = None
 
@@ -102,9 +102,6 @@ class TopicResult(Calculatable):
         self.id = topic_result_payload.get("topic_id")
         self.grade = topic_result_payload.get("grade")
         # super().__init__(grade=topic_result_payload.get("grade"))
-
-    def __repr__(self):
-        return f"TopicResult({self.description}, {self.id}, {self.grade})"
 
 
 class DirectionResult(Calculatable):

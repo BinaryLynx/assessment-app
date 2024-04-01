@@ -8,7 +8,7 @@ services:
     image: postgres:latest
     container_name: db
     env_file:
-      - .env
+      - .env-docker
     volumes:
       - db_data:/var/lib/postgresql/data
     ports:
@@ -18,7 +18,7 @@ services:
     build:
       context: .
     env_file:
-      - .env
+      - .env-docker
     ports:
       - 8080:8080
     depends_on:

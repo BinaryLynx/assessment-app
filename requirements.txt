@@ -26,3 +26,4 @@ zipp==3.15.0
 # Custom
 python-dotenv
 waitress
+pytest
